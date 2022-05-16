@@ -61,12 +61,6 @@ build CMakeFiles/chessengine.dir/models/Piece.cpp.o: CXX_COMPILER__chessengine_D
   OBJECT_DIR = CMakeFiles/chessengine.dir
   OBJECT_FILE_DIR = CMakeFiles/chessengine.dir/models
 
-build CMakeFiles/chessengine.dir/tests/PieceTests.cpp.o: CXX_COMPILER__chessengine_Debug /home/gordo/CLionProjects/chessengine/tests/PieceTests.cpp || cmake_object_order_depends_target_chessengine
-  DEP_FILE = CMakeFiles/chessengine.dir/tests/PieceTests.cpp.o.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles/chessengine.dir
-  OBJECT_FILE_DIR = CMakeFiles/chessengine.dir/tests
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target chessengine
@@ -75,7 +69,7 @@ build CMakeFiles/chessengine.dir/tests/PieceTests.cpp.o: CXX_COMPILER__chessengi
 #############################################
 # Link the executable chessengine
 
-build chessengine: CXX_EXECUTABLE_LINKER__chessengine_Debug CMakeFiles/chessengine.dir/main.cpp.o CMakeFiles/chessengine.dir/models/Piece.cpp.o CMakeFiles/chessengine.dir/tests/PieceTests.cpp.o
+build chessengine: CXX_EXECUTABLE_LINKER__chessengine_Debug CMakeFiles/chessengine.dir/main.cpp.o CMakeFiles/chessengine.dir/models/Piece.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/chessengine.dir
   POST_BUILD = :
