@@ -31,11 +31,11 @@ namespace Chess {
 
         static int getPieceType(int piece);
 
-        static bool isRookOrQueen (int piece);
+        static bool isRookOrQueen(int piece);
 
-		static bool isBishopOrQueen (int piece);
+        static bool isBishopOrQueen(int piece);
 
-		static bool isSlidingPiece (int piece);
+        static bool isSlidingPiece(int piece);
     };
 }
 
