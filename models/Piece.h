@@ -25,17 +25,30 @@ namespace Chess {
         static const int blackMask = 0b10000;
         static const int colorMask = whiteMask | blackMask;
 
-        static bool isColor(int piece, int color);
+        static bool isColor(int piece, int color) {
+            return getColor(piece) == color;
+        }
 
-        static int getColor(int piece);
+        static int getColor(int piece) {
+            return piece & colorMask;
+        }
 
-        static int getPieceType(int piece);
+        static int getPieceType(int piece) {
+            return piece & typeMask;
+        }
 
-        static bool isRookOrQueen(int piece);
+        static bool isRookOrQueen(int piece) {
+            return (piece & 0b110) == 0b110;
+        }
 
-        static bool isBishopOrQueen(int piece);
+        static bool isSlidingPiece(int piece) {
+            return (piece & 0b100) != 0;
+        }
 
-        static bool isSlidingPiece(int piece);
+        static bool isBishopOrQueen(int piece) {
+            return (piece & 0b101) == 0b101;
+        }
+
     };
 }
 
