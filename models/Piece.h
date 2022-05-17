@@ -37,6 +37,11 @@ namespace Chess {
 
         static bool isBishopOrQueen(int piece);
 
+    private:
+        static const int SLIDING_PIECE_MASK = 0b100;
+        static const int BISHOP_OR_QUEEN_MASK = 0b101;
+        static const int ROOK_OR_QUEEN_MASK = 0b110;
+
     };
 }
 
