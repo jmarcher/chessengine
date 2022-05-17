@@ -36,10 +36,10 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif ()
 
 
-add_library(chessengine_lib library.cpp models/Piece.cpp)
+add_library(chessengine_lib library.cpp models/Piece.cpp models/Board.cpp models/Board.h lib/StringHelpers.cpp lib/StringHelpers.h)
 
 
-set(TEST_SOURCES "tests/main.cpp" tests/PieceTest.cpp)
+set(TEST_SOURCES "tests/main.cpp" tests/PieceTest.cpp tests/BoardTest.cpp)
 source_group("tests" FILES ${TEST_SOURCES})
 add_executable(ChessLibTest ${TEST_SOURCES})
 add_dependencies(ChessLibTest chessengine_lib)
